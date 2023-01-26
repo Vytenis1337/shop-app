@@ -3,7 +3,8 @@
   justify-items: center;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
-  background-image: url('C:\Users\pc\Desktop\PortfolioProjects\shop-app\public\images\contactsBg.png');
+  /* background-image: url('C:\Users\pc\Desktop\PortfolioProjects\shop-app\public\images\contactsBg.png'); */
+  background: #ffdbc5;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
