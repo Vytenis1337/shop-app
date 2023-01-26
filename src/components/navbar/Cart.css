@@ -1,0 +1,52 @@
+.cart-bg {
+  position: fixed;
+  overflow-x: scroll;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 1;
+}
+
+.cart-modal {
+  height: 100%;
+  width: 80%;
+  overflow-x: scroll;
+
+  background: #76e7c7;
+  background-attachment: fixed;
+  border-radius: 10px;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #362999;
+}
+
+.cart-modal-sum {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 35px;
+}
+
+.cart-modal-button {
+  height: 50px;
+  width: 25%;
+  margin: auto;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  border-style: none;
+  font-size: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.cart-modal-button:hover {
+  transform: scale(1.1);
+  border: 2px solid white;
+}

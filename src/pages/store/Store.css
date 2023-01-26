@@ -1,0 +1,40 @@
+.store {
+  display: flex;
+  background: pink;
+  padding-top: 65px;
+}
+
+.content {
+  flex: 4;
+}
+.side-menu {
+  flex: 1;
+}
+
+.products {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .store {
+    display: flex;
+    flex-direction: column;
+    background: #ffc0cb;
+    padding: 10px;
+  }
+
+  .content {
+    width: 100%;
+  }
+  .side-menu {
+    width: 100%;
+  }
+  .products {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+}

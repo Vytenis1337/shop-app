@@ -1,0 +1,101 @@
+.modal-cart-add {
+  background-color: blue;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+
+  margin: auto;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.modal-cart-add:focus {
+  text-decoration: none;
+}
+.modal-cart-add:hover {
+  transform: scale(1.05);
+}
+.modal-cart-add:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.modal-cart {
+  display: flex;
+}
+
+.modal-cart-buttons {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.modal-cart-incdec {
+  display: flex;
+  justify-content: space-around;
+}
+.modal-cart-decrease {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.modal-cart-decrease:hover {
+  transform: scale(1.05);
+}
+
+.modal-cart-increase {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.modal-cart-increase:hover {
+  transform: scale(1.05);
+}
+
+.modal-cart-remove {
+  background-color: #e7e7e7;
+  padding: 15px 20px;
+  margin: auto;
+
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.modal-cart-remove:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .modal-cart-add {
+  }
+}
