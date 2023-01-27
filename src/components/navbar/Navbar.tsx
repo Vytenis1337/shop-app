@@ -1,6 +1,7 @@
 import './Navbar.css';
 import { useState } from 'react';
 import { useStore } from '../../context/StoreProvider';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -20,13 +21,13 @@ export const Navbar = () => {
       <div className={isNavExpanded ? 'navbar-menu expanded' : 'navbar-menu'}>
         <ul>
           <li>
-            <a href='/'>Home</a>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <a href='/store'>Store</a>
+            <Link to='/store'>Store</Link>
           </li>
           <li>
-            <a href='/contacts'>Contacts</a>
+            <Link to='/contacts'>Contacts</Link>
           </li>
         </ul>
       </div>
