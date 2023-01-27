@@ -17,6 +17,10 @@
   font-size: 1.5rem;
   margin-left: 0.8rem;
 }
+
+.navbar-logo:hover {
+  color: yellow;
+}
 .navbar-menu {
   margin-left: auto;
 }

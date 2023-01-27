@@ -19,6 +19,7 @@
 @media (max-width: 730px) {
   .contacts {
     grid-template-columns: 1fr;
+    padding-top: 20px;
   }
   .contacts-icons {
     display: flex;

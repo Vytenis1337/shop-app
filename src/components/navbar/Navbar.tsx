@@ -2,6 +2,7 @@ import './Navbar.css';
 import { useState } from 'react';
 import { useStore } from '../../context/StoreProvider';
 import { Link } from 'react-router-dom';
+import { FaCity } from 'react-icons/fa';
 
 export const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -9,9 +10,9 @@ export const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <a href='/' className='navbar-logo'>
-        Logo
-      </a>
+      <Link to='/' className='navbar-logo'>
+        <FaCity size={50} />
+      </Link>
       <button
         className='hamburger'
         onClick={() => {
