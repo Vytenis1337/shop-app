@@ -21,13 +21,34 @@ export const Navbar = () => {
       <div className={isNavExpanded ? 'navbar-menu expanded' : 'navbar-menu'}>
         <ul>
           <li>
-            <Link to='/'>Home</Link>
+            <Link
+              to='/'
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to='/store'>Store</Link>
+            <Link
+              to='/store'
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}
+            >
+              Store
+            </Link>
           </li>
           <li>
-            <Link to='/contacts'>Contacts</Link>
+            <Link
+              to='/contacts'
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}
+            >
+              Contacts
+            </Link>
           </li>
         </ul>
       </div>
