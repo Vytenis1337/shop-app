@@ -28,6 +28,7 @@ type SelectedId = number | null | undefined;
 type StoreContextProps = {
   data: DataType[];
   setData: Dispatch<SetStateAction<DataType[]>>;
+  loading: boolean;
   selectedCategory: string | null;
   setSelectedCategory: Dispatch<SetStateAction<string | null>>;
   search: string;
@@ -59,6 +60,8 @@ export function useStore() {
 
 export const StoreProvider = ({ children }: StoreProviderProps) => {
   const [data, setData] = useState<DataType[]>([]);
+
+  const [loading, setLoading] = useState<boolean>(true);
 
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
@@ -127,6 +130,7 @@ export const StoreProvider = ({ children }: StoreProviderProps) => {
       .get('https://fakestoreapi.com/products')
       .then(({ data }) => {
         setData(data);
+        setLoading(false);
       })
       .catch((err) => console.dir(err));
   }, [setData]);
@@ -135,6 +139,7 @@ export const StoreProvider = ({ children }: StoreProviderProps) => {
       value={{
         data,
         setData,
+        loading,
         selectedCategory,
         setSelectedCategory,
         search,

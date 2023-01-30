@@ -5,9 +5,10 @@ import { Modal } from '../../components/modal/Modal';
 import { useStore } from '../../context/StoreProvider';
 import './Store.css';
 import { StoreItem } from '../../components/store/StoreItem';
+import { Loading } from '../../components/store/Loading';
 
 export const Store = () => {
-  const { data, selectedCategory, search } = useStore();
+  const { data, loading, selectedCategory, search } = useStore();
 
   const getFilteredList = () => {
     if (!selectedCategory) {
@@ -28,6 +29,7 @@ export const Store = () => {
       </div>
 
       <div className='content'>
+        {loading && <Loading />}
         {data && (
           <div className='products'>
             {filteredList
@@ -43,7 +45,6 @@ export const Store = () => {
         )}
       </div>
       <Modal />
-      {/* <Cart /> */}
     </div>
   );
 };
